@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
+    <title>HTML Form</title>
 </head>
 <body>
-    <h1> Kg cas website</h1>
-    <h2>Students info</h2>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit explicabo ullam tempora corrupti sed. Aliquam in ipsa hic quis perferendis. Eum, enim placeat doloremque ea hic inventore perspiciatis iure quos?</p>
-    <strong> Student 1</strong>
-    <hr>
-    <em>Aishwarya</em>
-    <sup> I.BSC.cs</sup>
-    <br>
-    <sub> Kg college of arts and science</sub>
-
-    <hr>
-    
+    <h1>Task 1</h1>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="name" placeholder="Name"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Password" required><br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio"  name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio"  name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Email" required><br><br>
+        <label for="phone">Phone Number:</label>
+        <select>
+            <option value="">+91</option>
+            <option value="">+97</option>
+        </select>
+        <input type="number" placeholder="Phone No"><br><br>
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
